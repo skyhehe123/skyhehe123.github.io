@@ -1,73 +1,4 @@
 /* latin-ext */
-#nav-wrapper {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-
-.nav {
-  display: flex;
-  height: 2em;
-  line-height: 2em;
-  flex-grow: 1;
-}
-
-.nav-link,
-.logo {
-  padding: 0 1em;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255,255,255,.5);
-}
-.navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
-}
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.fixed-bottom {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.sticky-top {
-  @supports (position: sticky) {
-    position: sticky;
-    top: 0;
-    z-index: $zindex-sticky;
-  }
-}
-.bg-dark {
-  /* background-color: #343a40!important; */
-  background-color: #ffb703!important;
-  /* background-color: #E5DCC3!important; */
-}
-.navbar {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
-
-
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -150,26 +81,30 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px
+  font-size: 14px;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-heading {
+h2 {
+  margin: 0;
+  font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
 }
 
-papertitle {
+.papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 700
+  font-size: 14px;
+  font-weight: 700;
 }
 
-name {
+.name {
+  padding-top: 20px;
+  margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
